@@ -1,0 +1,183 @@
+body{
+    font-family: arial; 
+    font-size: 80%; 
+    width: 100%; 
+    margin: 0; 
+    background: #eee;
+}
+
+p{ 
+    line-height: 3em;
+    font-size:14px;
+}
+
+h1, h2, h3, h4{
+    color: #ffa500;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+	a:hover,
+	a:active{ text-decoration: underline; }
+
+.page{ margin: 15px; }
+
+.logo{
+	width: 35%;
+	margin-top: 5px;
+	float: left;
+}
+
+.nav{
+	width: 60%;
+    float: right;
+	text-align: right;
+}
+    .nav ul li{
+        display: inline-block;
+        height: 62px;
+    }
+        .nav ul li a{
+            padding: 20px;
+            background: #ffa500;
+            color:#000000; 
+        }
+        .nav ul li a:hover{
+            background-color: #ffb424;
+            box-shadow: 0px 1px 1px #666;
+        }
+        .nav ul li a:active{ background-color: #ff8f00; }
+
+.content{
+	margin: 30px 0;
+	background: #d3d3d3;
+	padding: 20px;
+	clear: both;
+}
+
+.articles{
+    float:left;
+	margin: 10px 0;
+	width:100%
+}
+    .article{
+        float: left;
+        width: 30%;
+        margin: 10px;
+        border: 1px solid #ffa500;
+        text-align: center;
+        padding: 7px;
+    }
+        .article p{
+            line-height: 2em;
+        }
+        .article button{
+            background: #ffa500;
+            padding: 7px;
+            border: 0;
+            color:#ffffff;
+        }
+       
+.red-text{
+    color:#ff0000;
+}
+
+.green-text{
+    color:#00ff00;
+}
+
+.blue-text{
+    color:#0000ff;
+}
+
+.footer{
+    float:left;
+    width:96%;
+	border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+	.footer p{
+        text-align: left;
+        line-height: 1em;
+		text-transform: uppercase;
+		font-size: 80%;
+		color:#d4d4d4;
+	}
+
+.content,
+ul li a{ box-shadow: 0px 1px 1px #999; }
+
+/* High contrast Toggle section */
+
+.highcontrast-section {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+}
+
+#highcontrast-toggle-button{
+    float:left;
+    background-color: rgba(0,0,0,0.8);
+    color: #ffffff;
+    font-weight: bold;
+    height: 35px;
+    width: 200px;
+    border: 2px solid #000000;
+    border-width: 2px 0 2px 2px;
+}
+
+#highcontrast-close-button{
+    float: left;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    width: 25px;
+    border: 2px solid #000000;
+    border-width: 2px 2px 2px 0;
+}
+
+/* High contrast Styles */
+
+body.highcontrast h1,
+body.highcontrast h2,
+body.highcontrast h3,
+body.highcontrast h4{
+    color:#000000;
+}
+
+body.highcontrast .nav ul li a {
+    background: #000000;
+    color:#ffffff; 
+}
+
+body.highcontrast .content{
+    background: #757575;
+}
+
+body.highcontrast .article{
+    border: 1px solid #000000;
+}
+
+body.highcontrast .article button{
+    background: #000000;
+}
+
+body.highcontrast .red-text{
+    color: #EB0000;
+}
+
+body.highcontrast .green-text{
+    color: #008A00;
+}
+
+body.highcontrast .footer{
+    border: 1px solid #757575;
+}
+    body.highcontrast .footer p{
+        color: #757575;
+    }
